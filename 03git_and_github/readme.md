@@ -1,5 +1,7 @@
 This unit we learn
 
+working with the command line
+
 how to install git
 
 branching and merging
