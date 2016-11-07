@@ -28,7 +28,7 @@
 			    padding: 30px 0;
 			    font-family: Roboto;
 		   	}
-		   	#sidebar {
+		   	.sidebar {
 		   		display: inline-block;
 		   		/*height: 320px;*/
 		   		width: 470px;
@@ -36,8 +36,9 @@
 		   		padding-left: 40px;
 		   		padding-right: 40px;
 		   		box-sizing: border-box;
+		   		position: relative;
 		   	}
-		   	#content {
+		   	.content {
 		   		display: inline-block;
 		   		/*height: 320px;*/
 		   		width: 470px;
@@ -56,6 +57,11 @@
 		   		bottom: 0px;
 		   		right: -80px;
 		   	}
+		   	#leftLinkToTop {
+		   		position: absolute;
+		   		bottom: 0px;
+		   		left: -80px;
+		   	}
 	    </style>
 		
 	</head>
@@ -64,12 +70,25 @@
 		<div class="box">
 			<h1>Header</h1>
 		</div>
-		<div class="box" id="sidebar">
+		<div class="box sidebar">
 			<h2>Sidebar</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae culpa laboriosam cumque eveniet. Doloribus earum dicta impedit officiis! Voluptatem dolores repellendus voluptates ipsam quo, voluptatum, a nesciunt ea delectus quia!</p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae culpa laboriosam cumque eveniet. Doloribus earum dicta impedit officiis! Voluptatem dolores repellendus voluptates ipsam quo, voluptatum, a nesciunt ea delectus quia!</p>
+			
 		</div>
-		<div class="box" id="content">
+		<div class="content box">
+			<h2>Content</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed numquam accusamus ipsam, delectus omnis, dolorum! Praesentium odit illo, soluta distinctio, fuga voluptas sequi ea? Ipsam vel amet, delectus consectetur similique.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae culpa laboriosam cumque eveniet. Doloribus earum dicta impedit officiis! Voluptatem dolores repellendus voluptates ipsam quo, voluptatum, a nesciunt ea delectus quia!</p>
+			
+		</div>
+		<div class="box sidebar">
+			<h2>Sidebar</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae culpa laboriosam cumque eveniet. Doloribus earum dicta impedit officiis! Voluptatem dolores repellendus voluptates ipsam quo, voluptatum, a nesciunt ea delectus quia!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae culpa laboriosam cumque eveniet. Doloribus earum dicta impedit officiis! Voluptatem dolores repellendus voluptates ipsam quo, voluptatum, a nesciunt ea delectus quia!</p>
+			
+		</div>
+		<div class="content box">
 			<h2>Content</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed numquam accusamus ipsam, delectus omnis, dolorum! Praesentium odit illo, soluta distinctio, fuga voluptas sequi ea? Ipsam vel amet, delectus consectetur similique.</p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae culpa laboriosam cumque eveniet. Doloribus earum dicta impedit officiis! Voluptatem dolores repellendus voluptates ipsam quo, voluptatum, a nesciunt ea delectus quia!</p>
