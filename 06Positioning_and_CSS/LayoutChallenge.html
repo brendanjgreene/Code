@@ -15,6 +15,7 @@
 				padding: 10px;
 	     		border-radius: 10px;
 	     		font-size: 0;
+	     		padding-top: 200px;
 	     	}
 		    .box {
 			    display: block;
@@ -32,7 +33,7 @@
 		   		display: inline-block;
 		   		/*height: 320px;*/
 		   		width: 470px;
-		   		margin-right: 5px;
+		   		margin-right: 10px;
 		   		padding-left: 40px;
 		   		padding-right: 40px;
 		   		box-sizing: border-box;
@@ -42,7 +43,7 @@
 		   		display: inline-block;
 		   		/*height: 320px;*/
 		   		width: 470px;
-		   		margin-left: 5px;
+		   		margin-left: 10px;
 		   		padding-right: 40px;
 		   		padding-left: 40px;
 		   		box-sizing: border-box;
@@ -62,13 +63,19 @@
 		   		bottom: 0px;
 		   		left: -80px;
 		   	}
+		   	#header {
+		   		position: fixed;
+		   		top: 0;
+		   		right: 0;
+		   		border-style: dotted;
+		   		box-sizing: border-box;
+		    }
 	    </style>
 		
 	</head>
 	<body>
 	<div id="container">
-		<div class="box">
-			<h1>Header</h1>
+		<div id="header" class="box"><h1>Header</h1>
 		</div>
 		<div class="box sidebar">
 			<h2>Sidebar</h2>
