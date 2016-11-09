@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>My HTML5 Video</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+		<style type="text/css">
+		body{
+			background-color: #000;
+			font-family: roboto;
+		}
+		header{
+			width: 600px;
+			margin: 0px auto;
+		}
+		h1{
+
+			color: #fff
+		}
+		video{
+			display: block;
+			margin: 100px auto;
+			-webkit-filter: hue-rotate(150deg) invert(1) sepia(0.6);
+
+		
+		}
+		</style>
+
+	</head>
+	<body>
+		<header><h1>HTML5 - Video</h1></header>
+		<video controls="controls" poster="img/elephant.jpg" preload="metadata" autoplay>
+			<source src="video/MP4_Bunny.mp4#t=25,30" type="video/mp4">
+			<source src="video/OGV_Bunny.ogv#t25,30" type="video/ogg">
+			<source src="video/WebM_Bunny.webm#25.30" type="video/webm">
+		</video>
+		
+		
+	</body>
+	
+</html>
