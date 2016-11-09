@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>My Transforms</title>
+		<style type="text/css">
+
+		body{
+		background-color: #FFED21;
+		}
+		
+		div
+		{
+		padding: 40px;
+		width: 400px;
+		font-family: sans-serif;
+		font-size: xx-large;
+		text-align: center;
+        color: #fff;
+        border-radius: 25px 25px 0 0;
+
+
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 100px;
+
+		background-color:#CC2101;
+
+		}
+		.gradient{
+			background: linear-gradient(to right, #5F2C82, #3498DB);
+
+		}
+		
+		.radial{
+			background: radial-gradient(#FFED21 20%, #3498db 70%);
+		}
+		.shadow{
+			box-shadow: 10px -20px 8px #888888;
+		}
+		.multi{
+			background: linear-gradient(to right, #FFED21 1%, #FF2A06 10%, #9412FF 100%);
+		}
+		.transparent{
+			background: linear-gradient(-45deg, rgba(0,0,0,0), red);
+		}
+		.translated{
+			transform: translate(-175px, -100px);
+
+		}
+		.rotated{
+			transform: rotate(45deg);
+		}
+		.scaled{
+			transform: scale(2, 2);
+		}
+		.skewed{
+			transform: skew(10deg, 15deg);
+		}
+		.combined{
+			transform: translate(100px, 50px) rotate(50deg) skew(50deg, 20deg);
+		}
+		.threeD{
+			transform: perspective(200px) rotateY(45deg);
+		}
+		</style>
+	</head>
+	<body>
+	<div>My Transforms Page</div>
+		<div class="gradient">A box with a Gradient</div>
+		<div class="radial translated">I am translated</div>
+		<div class="radial shadow rotated">I'm rotated</div>
+		<div class="multi scaled">I'm scaled</div>
+		<div class="transparent shadow skewed">I'm skewed</div>
+		<div class="combined">I'm a combined transformer</div>
+		<div class="threeD">I'm three dimensional</div>
+        
+	</body>
+
+</html>
