@@ -30,29 +30,35 @@
 			margin: 0 20px 20px 20px;
 			border:2px solid black;
 		}
-		p{
-			
+		.greyscale{
+			-webkit-filter: grayscale(.8);/*apply filter to image*/
+		}
+		.blur{
+			-webkit-filter: blur(2px); /*apply filter to image*/
+		}
+		.multi{
+			-webkit-filter: blur(2px) sepia(.5) opacity(0.8); /*apply filter to image*/
 		}
 		
 		</style>
 	</head>
 	<body>
 		<div>
-			<h1>Froggy</h1>
+			<h1>Original</h1>
 			<img src="imgs/frog.jpg" alt="froggy" width="320" heigth="240"/>
 		</div>
 		<div>
-			<h1>Froggy</h1>
-			<img src="imgs/frog.jpg" alt="froggy" width="320" heigth="240"/>
+			<h1>Greyscale</h1>
+			<img src="imgs/frog.jpg" class="greyscale" alt="froggy" width="320" heigth="240"/>
 		</div>
 		<div>
-			<h1>Froggy</h1>
-			<img src="imgs/frog.jpg" alt="froggy" width="320" heigth="240"/>
+			<h1>Blur</h1>
+			<img src="imgs/frog.jpg" class="blur" alt="froggy" width="320" heigth="240"/>
 		</div>
 		<div>
-			<h1>Froggy</h1>
-			<img src="imgs/frog.jpg" alt="froggy" width="320" heigth="240"/>
-		</div>
+			<h1>Multi</h1>
+			<img src="imgs/frog.jpg" class="multi" alt="froggy" width="320" heigth="240"/>
+		</div> 
 	</body>
 </html>
 
