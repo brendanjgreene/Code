@@ -22,19 +22,22 @@
     font-size: xx-large;
     color: #fff;
   }
-  #gradient { 
+  .gradient { 
     /*width: 700px;*/ 
     /*height: 150px;*/
     display: inline-block;
   	background: linear-gradient(to right, #F0C27B, #4B1248);
   }
+  .radial{
+      background: radial-gradient(#FFED21 20%, #3498db 70%)
   </style>
 </head>
 <body>
 
 <div>
 	<h1>My Gradients Page</h1>
-	<div id='gradient'>A Box With a Gradient</div>
+	<div class="gradient">A Box With a Gradient</div>
+  <div class="radial">A Box With a Radial Gradient</div>
 </div>
 </body>
 </html>
