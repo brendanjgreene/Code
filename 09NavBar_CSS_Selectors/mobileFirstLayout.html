@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Layout Challenge</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+			#container {
+	     		margin-right: auto; /*Auto margins used for centering elements*/
+			    margin-left: auto; /*See previous topic*/
+			    width: 960px;
+			    /*height: 600px;*/
+			    /*background-color: #AA4639;*/
+				padding: 10px;
+	     		border-radius: 10px;
+	     		font-size: 0;
+	     		/*padding-top: 200px; remove padding from the container*/ 
+	     	}
+		    .box {
+			    display: block;
+			    width: 100%;
+			    /*height: 150px;*/
+			    background-color: #81BBC9;
+			    margin: 0 0 10px 0;
+			    border-radius: 10px;
+			    font-size: 20px;
+			    text-align: center;
+			    padding: 30px 0;
+			    font-family: Roboto;
+		   	}
+		   	.sidebar {
+		   		display: inline-block;
+		   		/*height: 320px;*/
+		   		width: 470px;
+		   		margin-right: 10px;
+		   		padding-left: 40px;
+		   		padding-right: 40px;
+		   		box-sizing: border-box;
+		   		position: relative;
+		   	}
+		   	.content {
+		   		display: inline-block;
+		   		/*height: 320px;*/
+		   		width: 470px;
+		   		margin-left: 10px;
+		   		padding-right: 40px;
+		   		padding-left: 40px;
+		   		box-sizing: border-box;
+		   		position: relative;
+		   	}
+		   	p {
+		   		text-align: left;
+		   		padding-bottom: 50px;
+		   	}
+		   	#linkToTop {
+		   		position: absolute;
+		   		bottom: 0px;
+		   		right: -80px;
+		   	}
+		   	#leftLinkToTop {
+		   		position: absolute;
+		   		bottom: 0px;
+		   		left: -80px;
+		   	}
+		   	/*#header {  remove code which fixed header to top
+		   		position: fixed;
+		   		top: 0;
+		   		right: 0;
+		   		border-style: dotted;
+		   		box-sizing: border-box;
+		   		z-index: 100;
+		    }*/
+		    body {
+		    	background-image: url(floating/imgs/Dog.jpg);
+		    	background-size: contain;
+		    }
+	    </style>
+		
+	</head>
+	<body>
+	<div id="container">
+		<div class="box" id="header"><h1>Header</h1>
+		</div>
+		<div class="box sidebar">
+			<h2>Sidebar</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae culpa laboriosam cumque eveniet. Doloribus earum dicta impedit officiis! Voluptatem dolores repellendus voluptates ipsam quo, voluptatum, a nesciunt ea delectus quia!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae culpa laboriosam cumque eveniet. Doloribus earum dicta impedit officiis! Voluptatem dolores repellendus voluptates ipsam quo, voluptatum, a nesciunt ea delectus quia!</p>
+			
+		</div>
+		<div class="box content">
+			<h2>Content</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed numquam accusamus ipsam, delectus omnis, dolorum! Praesentium odit illo, soluta distinctio, fuga voluptas sequi ea? Ipsam vel amet, delectus consectetur similique.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae culpa laboriosam cumque eveniet. Doloribus earum dicta impedit officiis! Voluptatem dolores repellendus voluptates ipsam quo, voluptatum, a nesciunt ea delectus quia!</p>
+			
+		</div>
+		<div class="box sidebar">
+			<h2>Sidebar</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae culpa laboriosam cumque eveniet. Doloribus earum dicta impedit officiis! Voluptatem dolores repellendus voluptates ipsam quo, voluptatum, a nesciunt ea delectus quia!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae culpa laboriosam cumque eveniet. Doloribus earum dicta impedit officiis! Voluptatem dolores repellendus voluptates ipsam quo, voluptatum, a nesciunt ea delectus quia!</p>
+			
+		</div>
+		<div class="box content">
+			<h2>Content</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed numquam accusamus ipsam, delectus omnis, dolorum! Praesentium odit illo, soluta distinctio, fuga voluptas sequi ea? Ipsam vel amet, delectus consectetur similique.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae culpa laboriosam cumque eveniet. Doloribus earum dicta impedit officiis! Voluptatem dolores repellendus voluptates ipsam quo, voluptatum, a nesciunt ea delectus quia!</p>
+			<a href="#" alt="linkToTop" id="linkToTop"><img src="arrow.png" alt="arrow"></a>
+
+		</div>
+
+		<div class="box"><h2>Footer</h2></div>
+	</div>
+
+
+		
+	</body>
+	</html>
