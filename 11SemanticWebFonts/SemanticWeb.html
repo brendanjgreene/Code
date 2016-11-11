@@ -16,7 +16,7 @@
 			/*background-color: #eee;*/
 			margin: 30px auto;
 			width: 100%;
-			height: 500px;
+			/*height: 500px;*/
 			display: flex;
 			flex-direction: column;
 			align-items:stretch;
@@ -40,10 +40,22 @@
 			font-size: 2em;
 			font-weight: bold;
 			}
+		#landing {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		#landing-message{
+			text-align: center;
+			font-family: Dosis;
+			font-size: 50px;
+			margin: 50px 20px;
+		}
 
 		@media screen and (min-width: 700px){
 			nav{
-				flex-direction: row;/*i came up with this on my own*/
+				flex-flow: row;/*i came up with this on my own*/
 				/*height: auto;my original solution*/
 				/*padding-bottom: 30px; my original solution*/
 				/*border-radius: 15px 15px 0 0; my solution*/
@@ -62,6 +74,11 @@
 				text-align: left;
 			/*Code goes here*/
 			}
+			#landing {
+				flex-direction: row;
+				width: 80%;
+				margin: 100px auto;
+			}
 		}
 
 		</style>
@@ -69,22 +86,19 @@
 <body>
 
 	<nav>
-		
 			<a id="logoNav">CODE INSTITUTE</a>
 			<a href="#">Home</a>
 			<a href="#">Projects</a>
 			<a href="#">About</a>
 			<a href="#">Contact</a>
 			<a href="#">Photos</a>
-		
-
 	</nav>
 	<section id="landing">
 		<div id="landing-message">
-			<h1>Make Creative Clever Fun Apps. Simple.</h1>
+			<h2>Make Creative Clever Fun Apps. Simple.</h2>
 		</div>
 		<div id="landing-graphic">
-			
+			<img id="landing-image" src="img/laptop.png" alt="laptop" width="400">
 		</div>
 	</section>
 
