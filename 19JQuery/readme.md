@@ -5,3 +5,5 @@ Change their CSS
 Change their content
 Listen to user interaction
 Respond to user interaction
+
+I was at writing our first script
