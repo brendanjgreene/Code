@@ -83,7 +83,9 @@ $(document).ready(function() {
     	//$(".button1").hide('slow');
     	//$(".button1").hide('medium');
     	//$(".button1").hide('fast');
-    	$(".button1").hide(1000);
+    	//$(".button1").hide(1000);
+    	//challenge b
+    	$("#p1").toggle();
     });
 
 
