@@ -78,7 +78,10 @@ div{
 }
 .lightBlueBack{
 	background-color: lightblue;
-	 
+
+}
+.h22em{
+	font-size: 2em;
 }
 
 #my_footer{
