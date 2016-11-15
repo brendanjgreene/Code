@@ -62,7 +62,7 @@ $(document).ready(function() {
     	$("#h2django").addClass( "h22em");
     	$("#h2css").removeClass( "h22em");
     });
-    
+
     $("#h2css").hover(function(){
     	$("#h2html").removeClass( "h22em");
     	$("#h2mysql").removeClass( "h22em");
@@ -70,6 +70,12 @@ $(document).ready(function() {
     	$("#h2jquery").removeClass( "h22em");
     	$("#h2django").removeClass( "h22em");
     	$("#h2css").addClass( "h22em");
+    });
+    $(".bottom_button").mouseenter(function(){
+    	$("body").addClass("blackBack");
+    });
+    $(".bottom_button").mouseleave(function(){
+    	$("body").removeClass("blackBack");
     });
 
 
