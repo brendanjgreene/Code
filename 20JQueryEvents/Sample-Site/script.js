@@ -79,7 +79,11 @@ $(document).ready(function() {
     });
 
     $(".button1").click(function(){
-    	$(".button1").hide();
+    	//$(".button1").hide();
+    	//$(".button1").hide('slow');
+    	//$(".button1").hide('medium');
+    	//$(".button1").hide('fast');
+    	$(".button1").hide(1000);
     });
 
 
