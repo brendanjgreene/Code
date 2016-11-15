@@ -93,5 +93,14 @@ $(document).ready(function() {
     	$("#p2").slideToggle();
     });
 
+    $(".button3").mouseenter(function(){
+    	
+    	$(".button3").fadeTo(1000, 0.5);
+    });
+    $(".button3").mouseleave(function(){
+    	
+    	$(".button3").fadeTo(1000, 1);
+    });
+
 
 }); 
