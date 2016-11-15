@@ -9,5 +9,9 @@ $(document).ready(function() {
  	$('#button1').addClass("makeRed").removeClass("makeBorder");
  });
 
+ $("#button1").click(function() {
+ 	$("#para1").slideToggle();
+ });
+
 
 }); 
