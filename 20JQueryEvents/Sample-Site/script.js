@@ -78,5 +78,9 @@ $(document).ready(function() {
     	$("body").removeClass("blackBack");
     });
 
+    $(".button1").click(function(){
+    	$(".button1").hide();
+    });
+
 
 }); 
