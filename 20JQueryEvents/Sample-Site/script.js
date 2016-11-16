@@ -1,106 +1,17 @@
 $(document).ready(function() {
- 
+    $(".stream-nav").on("click", function() {
+        /**
+         * When we click on an element that has
+         * a 'box' class, this event will be fired.
+         */
+        var elementId = $(this).attr("id");
+        var cardClass = $(".card").attr("class").split(" ")[0];
 
- 	$("p").click(function(){
-        $("p").addClass( "highlight_text");
+        if ($("." + elementId).css("background-color") == "rgb(235, 82, 85)") {
+            $("." + elementId).css("background-color", "#fff");
+        } else {
+            $("." + cardClass).css("background-color", "#fff");
+            $("." + elementId).css("background-color", "rgb(235, 82, 85)");
+        }
     });
-
-    $("h2").hover(function(){
-    	$("h2").addClass( "lightBlueBack");
-    });
-
-    $("#h2html").hover(function(){
-    	$("#h2html").addClass( "h22em");
-    	$("#h2mysql").removeClass( "h22em");
-    	$("#h2python").removeClass( "h22em");
-    	$("#h2jquery").removeClass( "h22em");
-    	$("#h2django").removeClass( "h22em");
-    	$("#h2css").removeClass( "h22em");
-    });
-
-    $("#h2mysql").hover(function(){
-    	$("#h2html").removeClass( "h22em");
-    	$("#h2mysql").addClass( "h22em");
-    	$("#h2python").removeClass( "h22em");
-    	$("#h2jquery").removeClass( "h22em");
-    	$("#h2django").removeClass( "h22em");
-    	$("#h2css").removeClass( "h22em");
-    });
-
-    $("#h2python").hover(function(){
-    	$("#h2html").removeClass( "h22em");
-    	$("#h2mysql").removeClass( "h22em");
-    	$("#h2python").addClass( "h22em");
-    	$("#h2jquery").removeClass( "h22em");
-    	$("#h2django").removeClass( "h22em");
-    	$("#h2css").removeClass( "h22em");
-    });
-
-    $("#h2jquery").hover(function(){
-    	$("#h2html").removeClass( "h22em");
-    	$("#h2mysql").removeClass( "h22em");
-    	$("#h2python").removeClass( "h22em");
-    	$("#h2jquery").addClass( "h22em");
-    	$("#h2django").removeClass( "h22em");
-    	$("#h2css").removeClass( "h22em");
-    });
-
-    $("#h2jquery").hover(function(){
-    	$("#h2html").removeClass( "h22em");
-    	$("#h2mysql").removeClass( "h22em");
-    	$("#h2python").removeClass( "h22em");
-    	$("#h2jquery").addClass( "h22em");
-    	$("#h2django").removeClass( "h22em");
-    	$("#h2css").removeClass( "h22em");
-    });
-
-    $("#h2django").hover(function(){
-    	$("#h2html").removeClass( "h22em");
-    	$("#h2mysql").removeClass( "h22em");
-    	$("#h2python").removeClass( "h22em");
-    	$("#h2jquery").removeClass( "h22em");
-    	$("#h2django").addClass( "h22em");
-    	$("#h2css").removeClass( "h22em");
-    });
-
-    $("#h2css").hover(function(){
-    	$("#h2html").removeClass( "h22em");
-    	$("#h2mysql").removeClass( "h22em");
-    	$("#h2python").removeClass( "h22em");
-    	$("#h2jquery").removeClass( "h22em");
-    	$("#h2django").removeClass( "h22em");
-    	$("#h2css").addClass( "h22em");
-    });
-    $(".bottom_button").mouseenter(function(){
-    	$("body").addClass("blackBack");
-    });
-    $(".bottom_button").mouseleave(function(){
-    	$("body").removeClass("blackBack");
-    });
-
-    $(".button1").click(function(){
-    	//$(".button1").hide();
-    	//$(".button1").hide('slow');
-    	//$(".button1").hide('medium');
-    	//$(".button1").hide('fast');
-    	//$(".button1").hide(1000);
-    	//challenge b
-    	$("#p1").toggle();
-    });
-
-    $(".button2").click(function(){
-    	
-    	$("#p2").slideToggle();
-    });
-
-    $(".button3").mouseenter(function(){
-    	
-    	$(".button3").fadeTo(1000, 0.5);
-    });
-    $(".button3").mouseleave(function(){
-    	
-    	$(".button3").fadeTo(1000, 1);
-    });
-
-
-}); 
+});
