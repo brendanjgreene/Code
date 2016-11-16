@@ -12,6 +12,9 @@ $(document).ready(function() {
  $("button").click(function() {
  	$("p").slideToggle();
  });
+ $("p").click(function(){
+ 	$("p").slideToggle('slow');
+ });
 
 
 }); 
