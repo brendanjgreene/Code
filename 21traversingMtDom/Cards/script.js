@@ -14,4 +14,8 @@ $(document).ready(function() {
             $("." + elementId).css("background-color", "rgb(235, 82, 85)");
         }
     });
+
+    $("p").click(function(){
+        $(this).children("a").css("background-color", "yellow");
+    });
 });
