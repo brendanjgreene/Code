@@ -26,4 +26,8 @@ $(document).ready(function() {
     $("img").click(function(){
         $(this).next().next('p').slideDown();
     });  // added this because some didn't have card bottom division.
+
+    $(".card").click(function(){
+        $(this).toggleClass("highlighted_card");
+    });
 });

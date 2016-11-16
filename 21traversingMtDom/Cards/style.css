@@ -97,6 +97,9 @@ div{
 	margin-bottom:10px;
 
 }
+.highlighted_card{
+	background-color: pink;
+}
 
 /*************************
 Navigation
