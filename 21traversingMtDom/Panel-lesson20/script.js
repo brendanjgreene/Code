@@ -16,10 +16,15 @@ $(document).ready(function(){
  	$("#panel .container").siblings().fadeTo(1000, 1);
  });
 
- $(".theButton").mouseenter(function(){
- 	$(this).addClass("makeBlack");
- });
- $(".theButton").mouseleave(function(){
- 	$(this).removeClass("makeBlack");
- });
+ //$(".theButton").mouseenter(function(){
+ 	//$(this).addClass("makeBlack");
+ //});
+ //$(".theButton").mouseleave(function(){
+ //	$(this).removeClass("makeBlack");
+ //});
+ $(".theButton").click(function(){
+    var col = $(this).css('background-color');
+  $('.superButton').text( col);
+
+   });
 });

@@ -6,4 +6,10 @@ $(document).ready(function() {
 		$("td").removeClass("highlight"); // alternative solution
 		$(this).siblings().addClass("highlight");
 	});
+
+	$(".theButton").click(function(){
+    var col = $(this).css('background-color');
+  $('.superButton').text( col);
+
+   });
 });
