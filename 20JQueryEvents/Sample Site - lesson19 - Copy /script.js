@@ -1,16 +1,16 @@
 $(document).ready(function() {
  //
  // add your jQuery code here
- $('#button1').mouseenter(function() {
- 	$('#button1').removeClass("makeRed").addClass("makeBorder");
+ $('button').mouseenter(function() {
+ 	$('button').removeClass("makeRed").addClass("makeBorder");
  });
 
- $('#button1').mouseleave(function() {
- 	$('#button1').addClass("makeRed").removeClass("makeBorder");
+ $('button').mouseleave(function() {
+ 	$('button').addClass("makeRed").removeClass("makeBorder");
  });
 
- $("#button1").click(function() {
- 	$("#para1").slideToggle();
+ $("button").click(function() {
+ 	$("p").slideToggle();
  });
 
 
