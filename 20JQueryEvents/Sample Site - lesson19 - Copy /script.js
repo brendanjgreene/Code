@@ -13,7 +13,7 @@ $(document).ready(function() {
  	$("p").slideToggle();
  });
  $("p").click(function(){
- 	$("p").slideToggle('slow');
+ 	$(this).slideToggle('slow');
  });
 
 
