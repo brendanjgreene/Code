@@ -12,4 +12,7 @@ $(document).ready(function(){
  $(".theButton").click(function(){
  	$("#panel .container").siblings().fadeTo(1000, 0.1);
  });
+ $(".superButton").click(function(){
+ 	$("#panel .container").siblings().fadeTo(1000, 1);
+ });
 });
