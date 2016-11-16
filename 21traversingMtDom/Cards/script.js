@@ -18,4 +18,12 @@ $(document).ready(function() {
     $("p").click(function(){
         $(this).children("a").css("background-color", "yellow");
     });
+
+    $("img").click(function(){
+        $(this).next().children('p').slideDown();
+    });
+
+    $("img").click(function(){
+        $(this).next().next('p').slideDown();
+    });  // added this because some didn't have card bottom division.
 });
