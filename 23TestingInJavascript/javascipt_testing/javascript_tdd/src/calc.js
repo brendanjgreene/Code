@@ -1,8 +1,11 @@
-function addition(firstNumber, secondNumber) {
-    if (typeof(firstNumber) == "number" && typeof(secondNumber) == "number") {
-        var sum = firstNumber + secondNumber;
-        return sum;
+Calculator = function() {
+    this.value = 0;
+};
+ 
+Calculator.prototype.add = function(number) {
+    if (typeof(number) == "number") {
+        this.value += number;
     } else {
-        alert("Arguments must both be a number");
+        alert("Argument must be a number");
     }
-}
+};
