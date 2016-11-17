@@ -1,3 +1,4 @@
-function addition() {
-    return 42;
+function addition(firstNumber, secondNumber) {
+    var sum = firstNumber + secondNumber;
+    return sum;
 }
