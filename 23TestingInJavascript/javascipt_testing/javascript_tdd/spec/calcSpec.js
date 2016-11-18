@@ -76,7 +76,7 @@ describe("Calculator", function() {
             expect(calc.value).toBe(1);
         });
 
-        it("should have called the alert function if the number given is undefined", function() {
+        it("should have called the alert function if the number given is undefined or zero", function() {
             spyOn(window, "alert");
             calc.divide();
             expect(window.alert).toHaveBeenCalledWith("Argument must be a number and not Zero");

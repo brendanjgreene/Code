@@ -28,7 +28,7 @@ Calculator.prototype.multiply = function(number) {
 };
 
 Calculator.prototype.divide = function(number) {
-	if (typeof(number) == "number" && number>0) {
+	if (typeof(number) == "number" && number!==0){
 		this.value /=number;
 
 	} else {
