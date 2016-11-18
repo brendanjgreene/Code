@@ -9,3 +9,30 @@ Calculator.prototype.add = function(number) {
         alert("Argument must be a number");
     }
 };
+
+Calculator.prototype.subtract = function(number) {
+	if (typeof(number) == "number") {
+		this.value -= number;
+	} else {
+		alert("Argument must be a number");
+	}
+};
+
+Calculator.prototype.multiply = function(number) {
+	if (typeof(number) == "number") {
+		this.value *=number;
+
+	} else {
+		alert("Argument must be a number");
+	}
+};
+
+Calculator.prototype.divide = function(number) {
+	if (typeof(number) == "number" && number>0) {
+		this.value /=number;
+
+	} else {
+		alert("Argument must be a number and not Zero");
+	}
+};
+
