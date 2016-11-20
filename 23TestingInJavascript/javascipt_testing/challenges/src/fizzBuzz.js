@@ -1,10 +1,8 @@
-fizzBuzz = function() {
- 	this.value=0;
-};
-
-fizzBuzz.prototype = function(number) {
-	if (number % 3 && number %5) {
-		return "FizzBuzz";
-	}
-	
+fizzBuzz = function(number) {
+	if (number%3===0  && number%5===0) {
+		alert ("FizzBuzz");
+	};
+	else if (number%3===0){
+		return "Fizz";
+	};
 };

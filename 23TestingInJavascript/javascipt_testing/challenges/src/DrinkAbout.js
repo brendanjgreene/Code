@@ -20,3 +20,4 @@ whatCanIDrink.prototype.add = function(number) {
     }
     else alert("Sorry. I can't tell what drink because the age is incorrect!");
 };
+
