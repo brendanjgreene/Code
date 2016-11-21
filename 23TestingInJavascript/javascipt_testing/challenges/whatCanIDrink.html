@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+
+
+<script type="text/javascript">
+function whatCanIDrink(number) {
+    //this.age = 0;
+    if (number<0){
+    alert("Sorry. I can’t tell what drink because that age is incorrect!");
+    }
+    else if (number<14){
+    alert("Drink Toddy");
+    }
+    else if (number<18){
+    alert("Drink Coke");
+    }
+    else if (number<21){
+    alert("Drink Beer");
+    }
+    else if (number<130){
+    alert("Drink Whisky");
+    }
+    else alert("Sorry. I can't tell what drink because the age is incorrect!");
+}
+
+//whatCanIDrink(-5);
+//whatCanIDrink(10);
+//whatCanIDrink(16);
+//whatCanIDrink(19);
+//whatCanIDrink(45);
+//whatCanIDrink(170);
+
+</script>
+
+<form>
+How Old are You?:<br>
+	<input type="number" name="age" id="age" min="0" max="150" />
+	<input type="submit" value="Submit" onclick="whatCanIDrink(document.getElementById('age').value)" />
+</form>
+
+
+	
+</body>
+</html>
