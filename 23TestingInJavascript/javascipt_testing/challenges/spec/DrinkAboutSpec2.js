@@ -1,12 +1,12 @@
 describe("whatCanIDrink", function() {
  
     beforeEach(function() {
-        age = new whatCanIDrink();
+        number=new whatCanIDrink();
     });
     describe('under 0 function', function() {
         it('should return "Sorry. I can’t tell what drink because that age is incorrect!"', function() {
             spyOn(window, "alert");
-            whatCanIDrink(27);
+            whatCanIDrink(-5);
             expect(window.alert).toHaveBeenCalledWith("Sorry. I can’t tell what drink because that age is incorrect!");
         });
     });
