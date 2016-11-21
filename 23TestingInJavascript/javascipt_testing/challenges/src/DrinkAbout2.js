@@ -9,7 +9,8 @@ whatCanIDrink = function(number) {
     alert("Drink Coke");
     }
     else if (number<21){
-    alert("Drink Beer");
+        alert("Drink Beer");
+        return("Drink Beer");
     }
     else if (number<130){
     alert("Drink Whisky");

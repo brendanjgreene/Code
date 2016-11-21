@@ -45,6 +45,11 @@ describe("whatCanIDrink", function() {
             expect(window.alert).toHaveBeenCalledWith("Sorry. I can't tell what drink because the age is incorrect!");
         });
     });
+    describe('under21 return funcition', function(){
+        it ("should return Drink Beer", function(){
+            expect(whatCanIDrink(20)).toEqual("Drink Beer");
+        });
+    });
 
 
 });
